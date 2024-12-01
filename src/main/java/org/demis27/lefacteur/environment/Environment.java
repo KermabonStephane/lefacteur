@@ -5,7 +5,9 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
+import java.util.function.Function;
 
 @Getter
 @Setter
@@ -17,6 +19,10 @@ public class Environment {
     private String name;
 
     private List<Element> elements;
+
+    public Optional<Environment.Element> getElement(String key) {
+        return elements.stream().filter(element -> element.key.equals(key)).findFirst();
+    }
 
     @Getter
     @Setter
