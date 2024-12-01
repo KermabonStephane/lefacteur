@@ -1,0 +1,29 @@
+{
+	"id": "0d1fedac-6503-4a06-8cf4-bea6eb1c30c5",
+	"name": "PlayOffLocal",
+	"values": [
+		{
+			"key": "url",
+			"value": "localhost",
+			"enabled": true
+		},
+		{
+			"key": "port",
+			"value": "8080",
+			"enabled": true
+		},
+		{
+			"key": "id",
+			"value": "",
+			"enabled": true
+		},
+		{
+			"key": "newValue",
+			"value": "new value",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-12-01T18:04:02.009Z",
+	"_postman_exported_using": "Postman/11.18.4"
+}
