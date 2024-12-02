@@ -13,11 +13,11 @@ import java.io.InputStream;
 public class EnvironmentImporter {
 
     ObjectMapper mapper = new ObjectMapper();
-    public Environment importEnvironment(String filename, ImportExportFormat format) throws IOException {
-        return importEnvironment(new FileInputStream(filename), format);
+    public Environment importEnvironment(String filename) throws IOException {
+        return importEnvironment(new FileInputStream(filename));
     }
 
-    public Environment importEnvironment(InputStream input, ImportExportFormat format) throws IOException {
+    public Environment importEnvironment(InputStream input) throws IOException {
         PostmanEnvironment postmanEnvironment = mapper.readValue(input, PostmanEnvironment.class);
         return PostmanMapper.toEnvironment(postmanEnvironment);
     }

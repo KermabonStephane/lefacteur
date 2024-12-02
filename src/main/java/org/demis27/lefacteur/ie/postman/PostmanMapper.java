@@ -6,6 +6,8 @@ import java.util.UUID;
 
 public class PostmanMapper {
 
+    private PostmanMapper() {}
+
     public static Environment toEnvironment(PostmanEnvironment postmanEnvironment) {
         return Environment.builder()
                 .id(UUID.randomUUID())
