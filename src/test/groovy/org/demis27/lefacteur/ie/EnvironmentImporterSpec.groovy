@@ -1,6 +1,6 @@
 package org.demis27.lefacteur.ie
 
-import org.demis27.lefacteur.ImportExportFormat
+
 import spock.lang.Specification
 
 class EnvironmentImporterSpec extends Specification {
