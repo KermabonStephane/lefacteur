@@ -12,7 +12,7 @@ class EnvironmentImporterSpec extends Specification {
         def input = EnvironmentImporter.getResourceAsStream("todo-postman-environment.json")
 
         when: 'we import a postman environment export file'
-        def environment = importer.importEnvironment(input, ImportExportFormat.POSTMAN)
+        def environment = importer.importEnvironment(input)
 
         then: 'the LeFacteur environment is not null'
         environment != null
